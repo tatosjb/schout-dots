@@ -17,7 +17,7 @@ class Ranking extends React.PureComponent {
 
   render() {
     return (
-      <table className="table">
+      <table className={`table ${styles.table}`} >
         <thead>
           <tr>
             <th scope="col">#</th>
