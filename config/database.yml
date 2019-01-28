@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  username: postgres
+  host: localhost
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: scout-dots_development
+
+test:
+  <<: *default
+  database: scout-dots_test
+
+production:
+  <<: *default
+  database: scout-dots_production
+  username: scout-dots
+  password: <%= ENV['SCOUT-DOTS_DATABASE_PASSWORD'] %>
