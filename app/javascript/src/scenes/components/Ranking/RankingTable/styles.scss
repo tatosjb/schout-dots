@@ -1,0 +1,27 @@
+:local(.table){
+  min-width: 300px;
+}
+
+:local(.icon){
+  width: 8px;
+  padding-left: 20px !important;
+  padding-right: 0px !important;
+}
+
+:local(.point){
+  width: 8px;
+  padding-left: 20px !important;
+  padding-right: 0px !important;
+}
+
+:local(.gold){
+  color: #ffd700;
+}
+
+:local(.silver){
+  color: #c0c0c0;
+}
+
+:local(.brass){
+  color: #b5a642;
+}
