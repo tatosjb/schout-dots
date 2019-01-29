@@ -8,4 +8,3 @@
 // layout file, like app/views/layouts/application.html.erb
 
 import '../src/scenes/index'
-import 'bootstrap-sass/assets/javascripts/bootstrap'
