@@ -11,6 +11,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'webpacker'
 gem 'active_model_serializers', '~>0.9.4'
 
+gem 'devise'
+
 gem 'jbuilder', '~> 2.5'
 
 gem 'bootsnap', '>= 1.1.0', require: false
