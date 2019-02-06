@@ -12,6 +12,7 @@ gem 'webpacker'
 gem 'active_model_serializers', '~>0.9.4'
 
 gem 'devise'
+gem 'doorkeeper'
 
 gem 'jbuilder', '~> 2.5'
 
