@@ -4,13 +4,13 @@ Rails.application.routes.draw do
 
   root to: 'rank#root'
 
-  namespace :api do
-    namespace :v1 do
+  scope module: :api, defaults: { format: :json }, path: 'api' do
+    scope module: :v1, constraints: ApiConstraints.new(version: 1, default: true) do
       resources :scouts, only: :index
 
       devise_for :users, controllers: {
-        sessions: 'api/v1/users/sessions'
-      }
+        registrations: 'api/v1/users/registrations'
+      }, skip: [:sessions, :password]
     end
   end
 end
